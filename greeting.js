@@ -9,7 +9,7 @@ function saveName(text){
 }
 
 function handdleSubmit(event){
-    event.preventDefault();
+    // event.preventDefault();
     const currentValue = input.value;
     paintGreeting(currentValue);
     saveName(currentValue)

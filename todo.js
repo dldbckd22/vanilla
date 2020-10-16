@@ -23,8 +23,8 @@ function paintToDo(text){
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
     const span = document.createElement("span");
-    const newId = toDos.length+1
-    delBtn.addEventListener("click",delToDo)
+    const newId = toDos.length+1;
+    delBtn.addEventListener("click",delToDo);
     delBtn.innerText="X";
     span.innerText=text;
     li.appendChild(span);
@@ -34,7 +34,7 @@ function paintToDo(text){
     const toDoObj={
         text: text,
         id: newId
-    }
+    };
     toDos.push(toDoObj);
     saveToDos();
 }
